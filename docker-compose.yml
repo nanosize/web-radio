@@ -1,0 +1,13 @@
+services:
+  icecast:
+    image: infiniteproject/icecast
+    container_name: radio-server
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      # BUTTから接続するためのパスワード設定
+      - ICECAST_SOURCE_PASSWORD=password
+      - ICECAST_ADMIN_PASSWORD=password
+      - ICECAST_PASSWORD=password
+      - ICECAST_RELAY_PASSWORD=password
