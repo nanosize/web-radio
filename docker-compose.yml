@@ -6,7 +6,6 @@ services:
     ports:
       - "8000:8000"
     environment:
-      # BUTTから接続するためのパスワード設定
       - ICECAST_SOURCE_PASSWORD=password
       - ICECAST_ADMIN_PASSWORD=password
       - ICECAST_PASSWORD=password
